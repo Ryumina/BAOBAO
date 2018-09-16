@@ -71,4 +71,24 @@ $(function(){
 		};
 	});
 
+  $('.right_btn a').click(function () {
+    var id = $(this).attr('href')
+    var scrollTop = id === '#' ? 0 : $(id).offset().top
+    $("html").animate({
+      scrollTop: scrollTop
+    }, 500, "swing")
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
