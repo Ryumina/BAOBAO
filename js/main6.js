@@ -31,6 +31,14 @@ $(document).ready(function () {
 
 $(function(){
 
+	$("#menu_bar").on("click",function(){
+		$("#nav_wrap").fadeIn(300);
+		$("#nav").animate({"right":"0px"},1000,"easeOutCubic");
+	});
+
+
+
+
 	var a=0;
 
 	$(".main_page_3_right_btn").find("li").eq(0).click(function(){
