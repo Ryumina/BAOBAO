@@ -59,6 +59,14 @@ $(function () {
   });
 });
 
+/* fullpage */
+$(function() {
+	$('#main_wrap').fullpage({
+		autoScrolling:true,
+		scrollHorizontally: true,
+		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+	});
+})
 
 /*main_page_3 slide*/
 $(function () {
