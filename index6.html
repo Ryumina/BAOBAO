@@ -8,6 +8,7 @@
   <meta name="Description" content="">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="css/layout6.css" rel="stylesheet" type="text/css">
   <link href="slick/slick/slick.css" rel="stylesheet" type="text/css"/>
   <link href="slick/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
@@ -56,12 +57,11 @@
 				<!------nav_bar------>
 
 				<!------menu bar------>
-					<div id="menu_bar">
-						<div class="menu-wrapper">
-							<div class="hamburger-menu"></div>	 
-						</div>
+					<div class="menu_icon" onclick="this.classList.toggle('hover');Drop(0)">
+						<div class="menu-bar menu-bar1"></div>
+						<div class="menu-bar menu-bar2"></div>
+						<div class="menu-bar menu-bar3"></div>
 					</div>
-				</div>
 				<!------menu bar_end------>
 
 			</header>
@@ -127,7 +127,7 @@
 		<!------nav(modal)_end------>
 
 		<!------main_slide------>
-		<section id="main_slide_wrap" class="wheel">
+		<section id="main_slide_wrap" class="wheel_1">
 			<article class="slick-items">
 			  <div class="main_slide_1">
 				<div class="text_box">
@@ -168,7 +168,7 @@
 		<!------main_slide_1_end------>
 
 		<!------main_page_2------>
-		<section id="main_page_2_wrap" class="wheel">
+		<section id="main_page_2_wrap" class="wheel_2">
 			<article id="main_page_2">
 				<div class="concept_box">
 					<span class="concept">	CONCEPT</span>
@@ -192,7 +192,7 @@
 		<!------main_page_2_end------>
 
 		<!------main_page_3------>
-		<section id="main_page_3_wrap" class="wheel">
+		<section id="main_page_3_wrap" class="wheel_3">
 			<div id="main_page_3_slide">
 				<!----article_1---->
 				<article class="main_page_3">
@@ -305,22 +305,21 @@
 				</article>
 				<!----article_3_end---->
 			</div>
-
-				<div class="main_page_3_right_btn_wrap">
-					<div class="main_page_3_right_btn">
-						<ul>
-							<li class="main_page_3_right_btn_left"></li>
-							<li class="main_page_3_right_btn_right"></li>
-						</ul>
-					</div>
-				</div>
-
 		</section>
+
+		<div class="main_page_3_right_btn_wrap">
+			<div class="main_page_3_right_btn">
+				<ul>
+					<li><i class="material-icons arrow_back" style="color:#000;">arrow_back</i></li>
+					<li><i class="material-icons arrow_forward" style="color:#000;">arrow_forward</i></li>
+				</ul>
+			</div>
+		</div>
 
 		<!------main_page_3_end------>
 
 		<!------main_page_4------>
-		<section id="main_page_4_wrap" class="wheel">
+		<section id="main_page_4_wrap" class="wheel_4">
 			<article id="main_page_4_slide">
 					<ul>
 							<li>
@@ -378,7 +377,7 @@
 		<!------main_page_4_end------>
 
 		<!------footer------>
-		<section id="footer_wrap" class="wheel">
+		<section id="footer_wrap" class="wheel_5">
 			<article id="footer">
 				<div class="footer_img_box">
 					<div class="footer_img">
