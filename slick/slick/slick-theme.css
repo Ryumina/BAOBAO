@@ -144,8 +144,8 @@
 
     display: block;
 
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     padding: 5px;
 
     cursor: pointer;
@@ -165,10 +165,12 @@
 {
     opacity: 1;
 }
+
+/*메인슬라이드에서 font-size로 아래 버튼 2개 사이즈 변경*/
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 13px;
     line-height: 20px;
 
     position: absolute;
@@ -191,4 +193,15 @@
 {
     opacity: .75;
     color: black;
+}
+
+@media only screen and (min-width:1601px) {
+	.slick-dots li button:before{font-size:15px;}
+
+	.slick-dots li{margin:0 8px;}
+
+
+
+
+
 }
