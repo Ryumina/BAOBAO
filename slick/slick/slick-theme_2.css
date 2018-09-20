@@ -15,24 +15,27 @@
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
-
-*{border: none; outline: none;}
-
 /* Arrows */
 .slick-prev,
 .slick-next
 {
     font-size: 0;
     line-height: 0;
+
     position: absolute;
     top: 50%;
+
     display: block;
+
     width: 20px;
     height: 20px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+
+    cursor: pointer;
+
     color: transparent;
     border: none;
     outline: none;
@@ -67,7 +70,7 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
+    opacity: .6;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -85,11 +88,11 @@
 }
 .slick-prev:before
 {
-    content: '';
+    content: url('../../img/slider_arrow_prev_to.png');
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '';
+    content: url('../../img/slider_arrow_prev_to.png');
 }
 
 .slick-next
@@ -103,38 +106,45 @@
 }
 .slick-next:before
 {
-    content: '';
+    content: url('../../img/slider_arrow_next_to.png');
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '';
+    content: url('../../img/slider_arrow_next_to.png');
 }
 
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -0.5%;
+    bottom: -25px;
+
     display: block;
+
     width: 100%;
     padding: 0;
     margin: 0;
+
     list-style: none;
+
     text-align: center;
 }
 .slick-dots li
 {
     position: relative;
+
     display: inline-block;
+
     width: 20px;
     height: 20px;
     margin: 0 5px;
     padding: 0;
+
     cursor: pointer;
 }
 .slick-dots li button
@@ -165,12 +175,10 @@
 {
     opacity: 1;
 }
-
-/*메인슬라이드에서 font-size로 아래 버튼 2개 사이즈 변경*/
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 13px;
+    font-size: 6px;
     line-height: 20px;
 
     position: absolute;
@@ -180,7 +188,7 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: ' ';
     text-align: center;
 
     opacity: .25;
@@ -193,15 +201,4 @@
 {
     opacity: .75;
     color: black;
-}
-
-@media only screen and (min-width:1601px) {
-	.slick-dots li button:before{font-size:15px;}
-
-	.slick-dots li{margin:0 8px;}
-
-
-
-
-
 }

@@ -139,3 +139,27 @@ $(function(){
 	});
 
 });
+
+$(function(){
+	/*스크롤시 우측 고정버튼 색상 변화*/
+	$(window).on("mousewheel",function(){
+		var page_1 = $("body").hasClass("fp-viewing-0");
+		var page_2 = $("body").hasClass("fp-viewing-1");
+		var page_3 = $("body").hasClass("fp-viewing-2");
+		var page_4 = $("body").hasClass("fp-viewing-3");
+
+		if(page_1==true){
+			$(".right_btn").find("a").removeClass("wheel");
+			$(".right_btn").find("a").eq(0).addClass("wheel");
+		}else if(page_2==true){
+			$(".right_btn").find("a").removeClass("wheel");
+			$(".right_btn").find("a").eq(1).addClass("wheel");
+		}else if(page_3==true){
+			$(".right_btn").find("a").removeClass("wheel");
+			$(".right_btn").find("a").eq(2).addClass("wheel");
+		}else{
+			$(".right_btn").find("a").removeClass("wheel");
+			$(".right_btn").find("a").eq(3).addClass("wheel");
+		}
+	});
+});

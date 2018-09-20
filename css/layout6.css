@@ -82,13 +82,17 @@ content:" ";
 display:block;
 transition-duration:0.7s;}
 
+/*hover 방식 변경*/
 .nav_menu h2{color:#999;
 font-size:1.5rem;
 font-weight:400;
+display:inline-block;
+position:relative;
+left:0;
 transition-duration:0.7s;}
 
-.nav_menu ul li:hover h2{color:#fff;}
-.nav_menu ul li:hover .nav_line{width:100%;}
+.nav_menu ul li:hover h2{color:#fff;
+left:20px;}
 
 .nav_sns{width:120px;
 height:30px;
@@ -231,6 +235,8 @@ transform: rotate(-45deg);
 background-color:#999;}
 
 .right_btn a:first-child{margin-top:0px;}
+
+.right_btn a.wheel{background-color:#333;}
 
 /*main_slide_end*/
 
@@ -644,10 +650,6 @@ color:#dcdcdc;}
 	/*main_page_3*/
 
 	.span_box{transform:translate(-50%, -35%);}
-
-    .main_page_3_right_btn_wrap{top:60.2%;
-    right:6%;}
-
 
 	/*main_page_4*/
 	#main_page_4_slide{height:78vh;
