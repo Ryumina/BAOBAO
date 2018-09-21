@@ -139,7 +139,7 @@ transition: all 0.3s;}
 /*-----------------menu_bar_end----------------------------------------------------고정*/
 
 
-/*all_products_nav*/
+/*type_nav*/
 
 #all_products_nav_img{width:100%;
 overflow:hidden;}
@@ -214,6 +214,9 @@ top:50%;
 left:0;
 transform:translate(0,-50%);}
 
+/*옆에 사진 짤리면 여기서 수정*/
+.item{margin:0 15px;}
+
 .item img{width:75%;
 padding-top:10%;
 opacity:0.7;
@@ -223,7 +226,8 @@ left:50%;
 transform:translate(-50%,0);
 transition-duration:0.3s;}
 
-.item img:hover{opacity:1;}
+.item img:hover{padding-top:5%;
+opacity:1;}
 
 .item span{width:100%;
 font-size:1.3rem;
@@ -319,8 +323,8 @@ color:#dcdcdc;}
 
 	.nav_company{margin-top:1.5rem;}
 
-	/*all_products*/
-	.top_main_img img{width:105%;}
+	/*type*/
+	.top_main_img img{width:110%;}
 
 	#products li{line-height:2.5rem;}
 
@@ -329,10 +333,6 @@ color:#dcdcdc;}
 	.name{font-size:1.3rem;}
 
 	.hashtag{font-size:1.1rem;}
-
-
-
-
 
 	/*footer(고정)*/
 	.footer_box_menu{font-size:1.4rem;

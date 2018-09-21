@@ -200,7 +200,8 @@ font-weight:600;}
 margin-bottom:100px;}
 
 #products{width:80%;
-margin:0 auto;}
+margin:0 auto;
+margin-top:2%;}
 
 #products::after{content:" ";
 display:block;
@@ -212,7 +213,10 @@ text-align:center;
 line-height:2rem;
 margin-bottom:2%;
 margin-left:2%;
+position:relative;
+top:0;
 float:left;
+transition-duration:0.3s;
 /*background-color:#eaeaea;*/}
 
 #products li:nth-child(3n+1){margin-left:0;}
@@ -221,6 +225,7 @@ float:left;
 border-bottom:5px solid #fff;
 transition-duration:0.3s;}
 
+#products li:hover{top:-15px;}
 #products li:hover .border{border-bottom:5px solid #333;}
 
 .products_text{width:100%;
@@ -321,7 +326,7 @@ color:#dcdcdc;}
 	.nav_company{margin-top:1.5rem;}
 
 	/*all_products*/
-	.top_main_img img{width:105%;}
+	.top_main_img img{width:110%;}
 
 	#products li{line-height:2.5rem;}
 

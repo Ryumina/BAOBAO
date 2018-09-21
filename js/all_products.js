@@ -33,3 +33,8 @@ $(function () {
     isNav = !isNav
   });
 });
+
+//페이지 로드될 때 이미지 fadeIn
+$(document).ready(function(){
+	$('.fade_img').hide().fadeIn(1300);
+});

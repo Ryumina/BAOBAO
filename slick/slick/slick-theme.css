@@ -196,6 +196,10 @@
 }
 
 @media only screen and (min-width:1601px) {
+
+	.slick-dotted.slick-slider{
+    margin-bottom: 80px;}
+
 	.slick-dots li button:before{font-size:15px;}
 
 	.slick-dots li{margin:0 8px;}

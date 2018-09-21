@@ -64,7 +64,8 @@ $(function() {
 	$('#main_wrap').fullpage({
 		autoScrolling:true,
 		scrollHorizontally: true,
-		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+		anchors: ['main_page_1_full', 'main_page_2_full', 'main_page_3_full', 'main_page_4_full', 'main_page_5_full']
 	});
 })
 
@@ -118,24 +119,27 @@ $(function(){
 	$('.right_btn a').click(function (e) {
     e.preventDefault()
     var id = $(this).attr('href')
-    var scrollTop = id === '#' ? 0 : $(id).offset().top
+	$.fn.fullpage.moveTo(id)
+	checkRightBtn();
+    //var scrollTop = id === '#' ? 0 : $(id).offset().top
 	/* 위를 풀어서 쓴 것 var scrollTop
 	if (id === '#') {
 		scrollTop = 0
 	} else {
 		scrollTop = $(id).offset().top
 	}*/
-    $("html,body").animate({
-      scrollTop: scrollTop
-    }, 700, "swing")
+    //$("html,body").animate({
+      //scrollTop: scrollTop
+    //}, 700, "swing")
   });
 
 /*logo 클릭시 맨 위로 이동*/
 	$('#logo, .footer_box_logo').click(function(e){
 		e.preventDefault()
-		var logo = $(this).attr('href')
-		var scrollTop = logo === '#' ? 0 : $("#main_slide_wrap").offset().top
-			$("html").animate({scrollTop:scrollTop},700,"swing");
+		$.fn.fullpage.moveTo('main_page_1_full')
+		// var logo = $(this).attr('href')
+		// var scrollTop = logo === '#' ? 0 : $("#main_slide_wrap").offset().top
+		// $("html").animate({scrollTop:scrollTop},700,"swing");
 	});
 
 });
@@ -143,23 +147,24 @@ $(function(){
 $(function(){
 	/*스크롤시 우측 고정버튼 색상 변화*/
 	$(window).on("mousewheel",function(){
-		var page_1 = $("body").hasClass("fp-viewing-0");
-		var page_2 = $("body").hasClass("fp-viewing-1");
-		var page_3 = $("body").hasClass("fp-viewing-2");
-		var page_4 = $("body").hasClass("fp-viewing-3");
-
-		if(page_1==true){
-			$(".right_btn").find("a").removeClass("wheel");
-			$(".right_btn").find("a").eq(0).addClass("wheel");
-		}else if(page_2==true){
-			$(".right_btn").find("a").removeClass("wheel");
-			$(".right_btn").find("a").eq(1).addClass("wheel");
-		}else if(page_3==true){
-			$(".right_btn").find("a").removeClass("wheel");
-			$(".right_btn").find("a").eq(2).addClass("wheel");
-		}else{
-			$(".right_btn").find("a").removeClass("wheel");
-			$(".right_btn").find("a").eq(3).addClass("wheel");
-		}
+		checkRightBtn();
 	});
 });
+
+	function checkRightBtn() {
+		var bodyClass = $("body").attr('class');
+		$(".right_btn").find("a").removeClass("wheel");
+		switch(bodyClass) {
+			case "fp-viewing-main_page_1_full": 
+				$(".right_btn").find("a").eq(0).addClass("wheel");
+				break;
+			case "fp-viewing-main_page_2_full": 
+				$(".right_btn").find("a").eq(1).addClass("wheel");
+				break;
+			case "fp-viewing-main_page_3_full": 
+				$(".right_btn").find("a").eq(2).addClass("wheel");
+				break;
+			case "fp-viewing-main_page_4_full": 
+				$(".right_btn").find("a").eq(3).addClass("wheel");
+		}
+	}
