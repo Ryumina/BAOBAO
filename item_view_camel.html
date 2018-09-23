@@ -9,12 +9,15 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link href="css/brand_philosophy.css" rel="stylesheet" type="text/css">
+  <link href="css/item_view.css" rel="stylesheet" type="text/css">
+  <link href="slick/slick/slick_2.css" rel="stylesheet" type="text/css"/>
+  <link href="slick/slick/slick-theme_2.css" rel="stylesheet" type="text/css"/>
 
 
   <script src="js/jquery-1.11.3.min.js" type="text/javascript" text="javascript"></script>
   <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-  <script src="js/brand_philosophy.js" type="text/javascript"></script>
+  <script src="slick/slick/slick.min.js" type="text/javascript"></script>
+  <script src="js/item_view.js" type="text/javascript"></script>
 
 
  </head>
@@ -33,6 +36,17 @@
 				</a>
 			</div>
 			<!------logo_end------>
+
+			<!------back_btn------>
+			<div class="back_btn">
+				<a href="all_products.html">
+					<ul>
+						<li><img src="img/menu_back_icon.png"/></li>
+						<li><span class="vertical">BACK</span></li>
+					</ul>
+				</a>
+			</div>
+			<!------back_btn_end------>
 
 			<!------nav_bar------>
 			<div class="nav_bar">
@@ -120,43 +134,82 @@
 		</div>
 		<!------nav(modal)(고정)_end------>
 
-		<!----brand_nav---->
-		<div id="all_products_nav_img">
-			<div id="all_products_nav_wrap">
-				<nav>
-					<ul>
-						<li><a href="brand_history.html"><h2>BRAND HISTORY</h2></a></li>
-						<li><a href="top_message.html"><h2>TOP MESSAGE</h2></a></li>
-						<li><a href="brand_philosophy.html"><h2>BRAND PHILOSOPHY</h2></a></li>
-					</ul>
-				</nav>
-			</div>
-			<!----brand_nav_end---->
-	
-			<!----brand_philosophy---->
-			<section id="brand_philosophy">
-				<article id="brand_philosophy_image">
-					<div class="brand_philosophy_image_box"></div>
-				</article>
+		<!------item_view------>
+		<section id="item_view_wrap">
+			<article id="item_view">
+				<!------왼쪽 item photos------>
+				<div class="item_images">
+					<div class="single-item">
+						<div><img src="img/BB83AG663_color_0640.jpg"/></div>
+						<div><img src="img/BB83AG663_detail_01.jpg"/></div>
+						<div><img src="img/BB83AG663_detail_02.jpg"/></div>
+						<div><img src="img/BB83AG663_detail_03.jpg"/></div>
+					  </div>
+				</div>
+				<!------왼쪽 item photos_end------>
 
-				<article id="brand_philosophy_text">
-					<div class="brand_philosophy_text_box">
-						<h3>CORPORATE PHILOSOPHY</h3>
-						<p>Creation and Technology...</br>
-						ISSEY MIYAKE INC.'s basic philosophy is the continuing focus on both the importance of imagination and the development of new technology in which to make clothing.</br></br>
-						MIYAKE DESIGN STUDIO was created by Issey Miyake in 1970. In the next year, ISSEY MIYAKE INC. was founded as a
-						subsidiary to plan and manufacture clothes and related products for domestic and international sales.</br></br>
-						ISSEY MIYAKE has regularly participated in Paris Fashion Week since 1973. The design concept challenges the conventional
-idea of garment making and strives to highlight the relationship between body and cloth.</br></br>
-Issey Miyake is an internationally renowned designer. Inheriting his spirit of innovative product creation with the goal of
-enhancing people's daily lives, Miyake staff constantly search for ways to incorporate the joy of
-life into the company's creations.</br></br>
-ISSEY MIYAKE INC. values free thinking that is unconventional - thinking that takes into consideration the spirit of creation,
-curiosity and love as a universal expression.</p>
+				<!------오른쪽 item info------>
+				<div class="item_info">
+
+					<div class="item_name">LUCENT NUBUCK</div>
+
+					<div class="hashtag_and_code">
+						<ul>
+							<a href="#"><li>#TOTE BAG</li></a>
+							<a href="#"><li>#LUCENT</li></a>
+							<a href="item_view_camel.html"><li>#CAMEL</li></a>
+						</ul>
+						<span>Ref. BB83AG663</span>
 					</div>
-				</article>
-			</section>
-			<!----brand_philosophy---->
+					
+					<div class="item_description">
+						<span class="title">PRODUCT DETAILS</span>
+						<p>
+							Featuring a metallic enamel material, the Lucent series</br>
+							comes in a choice of autumn colors. The zippered inner</br>
+							pocket is large enough to accommodate A4-sized</br>
+							documents and it can also be used to keep your</br>
+							important items safe.
+						</p>
+					</div>
+
+					<div class="item_size">
+						<span class="title">SIZE</span>
+						<p>H340×W340 (mm)</p>
+					</div>
+
+					<div class="item_material">
+						<span class="title">MATERIAL</span>
+						<p>
+							Polyvinyl chloride base fabric: polyester</br>
+							part: nylon polyurethane brass
+						</p>
+					</div>
+
+					<div class="item_colors">
+						<span class="title">COLOR</span>
+						<ul>
+							<a href="item_view.html"><li><span class="gray"></span></li></a>
+							<a href="item_view_camel.html"><li><span class="camel"></span></li></a>
+							<a href="item_view_purple.html"><li><span class="purple"></span></li></a>
+						</ul>
+					</div>
+
+					<a href="#" class="favorite_wrap">
+						<div class="favorite">
+							<ul>
+								<li><img src="img/detail_ico.png"/></li>
+								<li class="move_left">ADD TO FAVORITE</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<!------오른쪽 item info_end------>
+
+
+			</article>
+		</section>
+		<!------item_view------>
 
 			<!------footer(고정)------>
 			<section id="footer_wrap" class="section">

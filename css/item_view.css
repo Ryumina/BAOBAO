@@ -36,33 +36,32 @@ top:30px;}
 
 #logo, util_menu, .util_menu li, .menu-wrapper {float:left;}
 
-/*top_btn*/
-.top_btn{width:100px;
+/*back_btn*/
+.back_btn{width:100px;
 position:relative;
 top:0;
 left:20%;
-transform:translate(-50%,-50%);
-cursor:pointer;}
+transform:translate(-50%,-50%);}
 
-.top_btn::after{content:" ";
+.back_btn::after{content:" ";
 display:block;
 clear:both;}
 
-.top_btn li{width:45%;
+.back_btn li{width:45%;
 color:#000;
 font-size:1.1rem;
 font-weight:500;
 margin-left:5%;
 display:inline-block;}
 
-.top_btn li:first-child{margin-left:0;}
+.back_btn li:first-child{margin-left:0;}
 
-.top_btn img{width:36px;}
+.back_btn img{width:36px;}
 
 .vertical{position:relative;
 top:6px;
 vertical-align:sub;}
-/*top_btn_end*/
+/*back_btn_end*/
 
 .nav_bar{width:225px;
 height:34px;
@@ -170,108 +169,129 @@ transition: all 0.3s;}
 
 /*-----------------menu_bar_end----------------------------------------------------고정*/
 
+/*item_view*/
+/*왼쪽 item photos*/
+#item_view_wrap{width:100%;
+padding-top:80px;
+margin-bottom:100px;}
 
-/*type_nav*/
-
-#all_products_nav_img{width:100%;
-overflow:hidden;}
-
-#all_products_nav_wrap{width:100%;
-height:60px;
-border-top:1px solid #eaeaea;
-position:relative;
-top:120px;}
-
-#all_products_nav_wrap nav{width:30%;
-height:60px;
-margin:0 auto;}
-
-#all_products_nav_wrap nav ul{width:100%;
-height:60px;
+#item_view{width:80%;
+height:90vh;
 margin:0 auto;
-text-align:center;}
+margin-top:120px;
+background-color:#fff;}
 
-nav::after{content:" ";
+#item_view::after{content:" ";
 display:block;
 clear:both;}
 
-#all_products_nav_wrap li{width:33%;
-height:55px;
-line-height:60px;
-border-bottom:5px solid #fff;
+.item_images{width:48%;
 float:left;
-transition-duration:0.3s;}
-
-#all_products_nav_wrap li:nth-child(3){border-bottom:5px solid #333;}
-
-#all_products_nav_wrap li:nth-child(3){width:14%;}
-#all_products_nav_wrap li:nth-child(4){width:20%;}
-
-#all_products_nav_wrap li:hover{border-bottom:5px solid #333;}
-
-#all_products_nav_wrap h2{font-size:1rem;
-font-weight:600;}
-
-.top_main_img{width:100%;
-margin-top:120px;
-text-align:center;
-background-color:#fff;}
-
-.top_main_img img{width:100%;}
-
-.title{width:100%;
-height:60px;
-text-align:center;
-line-height:60px;
-margin-top:60px;
-border-top:1px solid #eaeaea;
-border-bottom:1px solid #eaeaea;}
-
-.title h2{font-size:1.7rem;
-font-weight:600;}
-
-#type_wrap{width:100%;
-height:75vh;
-margin-bottom:100px;
-background-color:#fff;}
-
-#type{width:80%;
-height:100%;
-margin:0 auto;}
-
-.center{width:100%;
-height:90%;
 position:relative;
 top:50%;
 left:0;
 transform:translate(0,-50%);}
 
-/*옆에 사진 짤리면 여기서 수정*/
-.item{margin:0 15px;}
+.single-item{width:100%;}
+.single-item img{width:100%;}
+/*왼쪽 item photos_end*/
 
-.item img{width:75%;
-padding-top:10%;
-opacity:0.7;
+/*오른쪽 item info*/
+.item_info{width:35%;
+height:96%;
+margin-left:12%;
+float:left;
 position:relative;
-top:0;
-left:50%;
-transform:translate(-50%,0);
+top:50%;
+left:0;
+transform:translate(0,-50%);}
+
+.item_name{width:100%;
+font-size:2.5rem;
+font-weight:600;
+padding-bottom:0.5rem;
+border-bottom:4px solid #333;}
+
+.hashtag_and_code, .item_description, .item_size, .item_material, .item_colors{width:100%;
+padding:1.2rem 0;
+border-bottom:1px solid #dcdcdc;}
+
+.hashtag_and_code ul::after{content:" ";
+display:block;
+clear:both;}
+
+.hashtag_and_code li{color:#999;
+margin-right:0.5rem;
+margin-bottom:0.5rem;
+float:left;}
+
+.hashtag_and_code span{color:#999;}
+
+.title{font-size:1.5rem;
+font-weight:600;}
+
+.item_description p, .item_material p, .item_size p{margin-top:0.5rem;
+line-height:1.5rem;}
+
+.item_colors::after{content:" ";
+display:block;
+clear:both;}
+
+.item_colors ul{margin-top:0.5rem;}
+
+.item_colors li{width:34px;
+height:34px;
+float:left;
+margin-right:0.5rem;
+border:3px solid #fff;
+background-color:#fff;
 transition-duration:0.3s;}
 
-.item img:hover{padding-top:5%;
-opacity:1;}
+.item_colors li:hover{border:3px solid #333;}
 
-.item span{width:100%;
-font-size:1.3rem;
-font-weight:400;
-text-align:center;
-line-height:4em;
-display:block;}
+.item_colors li span{width:80%;
+height:80%;
+display:block;
+position:relative;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);}
 
+.gray{background-color:#6F6A64;}
+.camel{background-color:#C16323;}
+.purple{background-color:#4A3876;}
 
+.favorite_wrap{position:absolute;
+bottom:0;
+display:inline-block;}
 
-/*all_products_nav_end*/
+.favorite{padding:1rem 4rem;
+border:1px solid #c7c7c7;
+transition-duration:0.3s;}
 
+.favorite:hover{color:#eaeaea;
+background-color:#333;}
+
+.favorite::after{content:" ";
+display:block;
+clear:both;}
+
+.favorite li{font-size:1.2rem;
+font-weight:500;
+margin-left:20px;
+float:left;}
+
+.favorite li:first-child{margin-left:0;}
+
+.favorite li img{width:25px;}
+
+.move_left{position:relative;
+left:0;
+transition-duration:0.2s;}
+
+.favorite:hover .move_left{left:-20px;}
+/*오른쪽 item info_end*/
+/*item_view*/
 
 /*footer----------------------------------------------------고정*/
 

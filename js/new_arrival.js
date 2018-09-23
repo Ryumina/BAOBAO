@@ -22,10 +22,12 @@ $(function () {
   var isNav = false
   $(".menu_icon").on("click", function () {
     if (isNav) {
+	  $("#header_wrap").addClass("back");
       $("#nav_wrap").fadeOut(300);
 	  $("#nav").animate().stop();
       $("#nav").animate({"right": "-490px"}, 1000, "easeOutCubic");
     } else {
+	  $("#header_wrap").removeClass("back");
       $("#nav_wrap").fadeIn(300);
 	  $("#nav").animate().stop();
       $("#nav").animate({"right": "0px"}, 1000, "easeOutCubic");
@@ -37,4 +39,12 @@ $(function () {
 //페이지 로드될 때 이미지 fadeIn
 $(document).ready(function(){
 	$('.fade_img').hide().fadeIn(1300);
+});
+
+//top 버튼 클릭시 맨 위로 이동
+$(function(){
+	$('.top_btn').click(function(e){
+		e.preventDefault();
+		$("html").animate({scrollTop:0},1000,"easeOutCubic");
+	});
 });

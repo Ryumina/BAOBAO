@@ -16,6 +16,8 @@ height:120px;
 position:fixed;
 z-index:1000;}
 
+.back{background:#fff;}
+
 header{width:90%;
 height:120px;
 margin:0 auto;
@@ -34,10 +36,40 @@ top:30px;}
 
 #logo, util_menu, .util_menu li, .menu-wrapper {float:left;}
 
+/*top_btn*/
+.top_btn{width:100px;
+position:relative;
+top:0;
+left:20%;
+transform:translate(-50%,-50%);
+cursor:pointer;}
+
+.top_btn::after{content:" ";
+display:block;
+clear:both;}
+
+.top_btn li{width:45%;
+color:#000;
+font-size:1.1rem;
+font-weight:500;
+margin-left:5%;
+display:inline-block;}
+
+.top_btn li:first-child{margin-left:0;}
+
+.top_btn img{width:36px;}
+
+.vertical{position:relative;
+top:6px;
+vertical-align:sub;}
+/*top_btn_end*/
+
 .nav_bar{width:225px;
+height:34px;
 margin-top:46.8px;
-float:right;
-height:34px;}
+position:absolute;
+top:0;
+right:0;}
 
 .util_menu{width:137px;}
 

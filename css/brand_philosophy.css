@@ -16,6 +16,8 @@ height:120px;
 position:fixed;
 z-index:1000;}
 
+.back{background:#fff;}
+
 header{width:90%;
 height:120px;
 margin:0 auto;
