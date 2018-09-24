@@ -1,0 +1,345 @@
+@charset "utf-8";
+		
+*{margin:0; padding:0;}
+html{font-size:13px;}
+ol,ul{ list-style:none;}
+a {outline:0; text-decoration:none; color:#333;}
+img {border:0; vertical-align:top;}
+body {color:#333; font-family: 'Montserrat';}
+
+#wrap{width:100%;}
+
+/*header----------------------------------------------------고정*/
+
+#header_wrap{width:100%;
+height:120px;
+position:fixed;
+z-index:1000;}
+
+.back{background:#fff;}
+
+header{width:90%;
+height:120px;
+margin:0 auto;
+position:relative;}
+
+header::after{content:" ";
+display:block;
+clear:both;}
+
+#logo{width:188px;
+height:120px;
+position:relative;
+top:30px;}
+
+#logo img{width:90%;}
+
+#logo, util_menu, .util_menu li, .menu-wrapper {float:left;}
+
+/*top_btn*/
+.top_btn{width:100px;
+position:relative;
+top:0;
+left:20%;
+transform:translate(-50%,-50%);
+cursor:pointer;}
+
+.top_btn::after{content:" ";
+display:block;
+clear:both;}
+
+.top_btn li{width:45%;
+color:#000;
+font-size:1.1rem;
+font-weight:500;
+margin-left:5%;
+display:inline-block;}
+
+.top_btn li:first-child{margin-left:0;}
+
+.top_btn img{width:36px;}
+
+.vertical{position:relative;
+top:6px;
+vertical-align:sub;}
+/*top_btn_end*/
+
+.nav_bar{width:225px;
+height:34px;
+margin-top:46.8px;
+position:absolute;
+top:0;
+right:0;}
+
+.util_menu{width:137px;}
+
+.util_menu li{margin-left:30px;}
+
+.util_menu li:first-child{margin-left:0px;}
+
+/*header_end----------------------------------------------------고정*/
+
+/*nav(modal)----------------------------------------------------고정*/
+#nav_wrap{width:100%;
+height:100vh;
+position:fixed;
+top:0;
+z-index:200;
+background:rgba(0,0,0,0.5);
+display:none;}
+
+#nav_wrap::after{content:" ";
+display:block;
+clear:both;}
+
+#nav{width:310px;
+height:100%;
+padding:120px 90px;
+float:right;
+position:relative;
+right:-490px;
+z-index:201;
+background-color:rgba(0,0,0,0.83);}
+
+.nav_menu li{margin:1.7rem 0;}
+
+.nav_menu li:first-child{margin-top:0;}
+
+.nav_line{
+width:0;
+height:2px;
+margin-top:1rem;
+background-color:#999;
+content:" ";
+display:block;
+transition-duration:0.7s;}
+
+/*hover 방식 변경*/
+.nav_menu h2{color:#999;
+font-size:1.5rem;
+font-weight:400;
+display:inline-block;
+position:relative;
+left:0;
+transition-duration:0.7s;}
+
+.nav_menu ul li:hover h2{color:#fff;
+left:20px;}
+
+.nav_sns{width:120px;
+height:30px;
+margin-top:4em;}
+
+.nav_sns li{margin-left:10%;
+float:left;}
+
+.nav_sns li:first-child{margin-left:0;}
+
+.nav_company{color:#dcdcdc;
+margin-top:1rem;
+clear:both;}
+
+/*nav(modal)_end----------------------------------------------------고정*/
+
+/*-----------------menu_bar----------------------------------------------------고정*/
+
+.menu_icon {width: 50px;
+height: 50px;
+float:right;
+position: relative;
+top:-12px;
+transform:scale(0.8);
+cursor: pointer;
+z-index:20;}
+
+.menu-bar {width: 50px;
+height: 5px;
+background: #000;
+position: absolute;
+transition: all 0.3s;}
+
+.menu-bar1 {margin-top: 9px;}
+
+.menu-bar2 {margin-top: 23px;}
+
+.menu-bar3 {margin-top: 37px;}
+
+.menu_icon.hover .menu-bar1 {-webkit-transform: rotate(45deg) scaleX(0.7);margin-top: 22px;}
+.menu_icon.hover .menu-bar2 {opacity: 0}
+.menu_icon.hover .menu-bar3 {-webkit-transform: rotate(-45deg) scaleX(0.7);margin-top: 22px;}
+
+/*-----------------menu_bar_end----------------------------------------------------고정*/
+
+.title_wrap{padding-top:120px;}
+
+.title{width:100%;
+height:60px;
+text-align:center;
+line-height:60px;
+border-top:1px solid #eaeaea;
+border-bottom:1px solid #eaeaea;}
+
+.title h2{font-size:1.7rem;
+font-weight:600;}
+
+#products_wrap{width:100%;
+margin-bottom:100px;}
+
+#products{width:80%;
+margin:0 auto;
+margin-top:2%;}
+
+#products::after{content:" ";
+display:block;
+clear:both;}
+
+#products li{width:32%;
+height:50%;
+text-align:center;
+line-height:2rem;
+margin-bottom:2%;
+margin-left:2%;
+position:relative;
+top:0;
+float:left;
+transition-duration:0.3s;
+/*background-color:#eaeaea;*/}
+
+#products li:nth-child(3n+1){margin-left:0;}
+
+.border{width:100%;
+border-bottom:5px solid #fff;
+transition-duration:0.3s;}
+
+#products li:hover{top:-15px;}
+#products li:hover .border{border-bottom:5px solid #333;}
+
+.products_text{width:100%;
+padding-bottom:1rem;
+display:block;}
+
+.name{font-size:1.2rem;
+font-weight:600;
+margin-top:17px;}
+
+.hashtag{color:#666;
+font-size:1rem;
+font-weight:400;}
+
+/*all_products_nav_end*/
+
+
+/*footer----------------------------------------------------고정*/
+
+#footer_wrap{width:100%;
+height:120vh;
+position:relative;}
+
+#footer{width:100%;
+height:100vh;
+position:absolute;
+bottom:0;
+background-color:black;}
+
+#footer::atfer{content:" ";
+display:block;
+clear:both;}
+
+.footer_img_box{width:43%;
+height:100%;
+margin-left:1%;
+float:left;}
+
+.footer_img{width:65%;
+margin:-3rem  auto;}
+
+.footer_img img{width:100%;}
+
+.footer_box{width:56%;
+height:100%;
+float:right;
+/*background-color:#666;*/}
+
+.footer_box_logo{width:188px;
+height:60px;
+margin-top:14%;
+margin-left:6%;}
+
+.footer_box_logo img{width:100%;}
+
+.footer_box_menu{width:30%;
+font-size:1.2rem;
+font-weight:400;
+line-height:3.8rem;
+margin-top:6%;
+margin-left:6%;}
+
+.footer_box_menu li a{color:#999;}
+
+.footer_box_menu li a:hover .footer_box_menu a{color:#fff;}
+
+.footer_box_sns{width:120px;
+height:30px;
+margin-top:6%;
+margin-left:6%;}
+
+.footer_box_sns li{margin-left:10%;
+float:left;
+}
+
+.footer_box_sns li:first-child{margin-left:0;}
+
+.copyright{margin-top:3%;
+margin-left:6%;
+color:#dcdcdc;}
+
+/*footer_end----------------------------------------------------고정*/
+
+
+/*반응형 실험*/
+
+@media only screen and (min-width:1601px) {
+
+	/*nav(고정)*/
+	#nav{width:380px;
+	padding:150px 100px;}
+
+	.nav_menu li{margin:2.5rem 0;}
+
+	.nav_menu h2{font-size:1.7rem;
+	font-weight:500;}
+
+	.nav_company{margin-top:1.5rem;}
+
+	/*new_arrival*/
+	.top_main_img img{width:108;}
+
+	#products li{line-height:2.5rem;}
+
+	#all_products_nav_wrap h2{font-size:1.1rem;}
+
+	.name{font-size:1.3rem;}
+
+	.hashtag{font-size:1.1rem;}
+
+
+
+
+
+	/*footer(고정)*/
+	.footer_box_menu{font-size:1.4rem;
+	line-height:5rem;}
+
+	.footer_box_sns{margin-top:6%;}
+
+}
+
+@media only screen and (max-width:1600px) and (min-width:1401px) {
+
+}
+
+@media only screen and (max-width:1400px) and (min-width:1201px) {
+
+}
+
+

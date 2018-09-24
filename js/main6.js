@@ -31,8 +31,6 @@ $(document).ready(function () {
 
 		autoplaySpeed: 4000 /* 이미지가 다른 이미지로 넘어 갈때의 텀 */,
 
-		arrows: true,
-
 		slidesToShow: 1,
 
 		slidesToScroll: 1,
@@ -137,6 +135,8 @@ $(function(){
 	$('#logo, .footer_box_logo').click(function(e){
 		e.preventDefault()
 		$.fn.fullpage.moveTo('main_page_1_full')
+		$(".right_btn").find("a").removeClass("wheel");
+		$(".right_btn").find("a").eq(0).addClass("wheel");
 		// var logo = $(this).attr('href')
 		// var scrollTop = logo === '#' ? 0 : $("#main_slide_wrap").offset().top
 		// $("html").animate({scrollTop:scrollTop},700,"swing");

@@ -391,40 +391,19 @@ position:relative;
 -webkit-filter: grayscale(60%);
     filter: grayscale(60%);
 display:block;
-transition-duration:0.3s;}
+transition-duration:0.3s;
+background-color:#fff;}
 
 .span_box_video .video_box {
 	width:100%;
+	height: 100%;
 	left: 0;
-    height: 100%;
     top: 0;
 }
-
-.ytp-cued-thumbnail-overlay-image{background-image:url("../img/video_float_thumb.png") !important;}
 
 .full_box:hover .span_box_video{-webkit-filter: grayscale(0);
     filter: grayscale(0);}
 
-.span_box_video.one{background:url("../img/video_misty_thumb.png")no-repeat center center;
-background-size:cover;}
-.span_box_video.two{background:url("../img/video_float_thumb.png")no-repeat center center;
-background-size:cover;}
-.span_box_video.three{background:url("../img/video_detail_thumb.png")no-repeat center center;
-background-size:cover;}
-.span_box_video.four{background:url("../img/video_landscape_thumb.png")no-repeat center center;
-background-size:cover;}
-.span_box_video.five{background:url("../img/video_newdrop_thumb.png")no-repeat center center;
-background-size:cover;}
-.span_box_video.six{background:url("../img/video_tokolo_thumb.png")no-repeat center center;
-background-size:cover;}
-.span_box_video.seven{background:url("../img/video_clock_thumb.png")no-repeat center center;
-background-size:cover;}
-.span_box_video.eight{background:url("../img/video_parade_thumb.png")no-repeat center center;
-background-size:cover;}
-.span_box_video.nine{background:url("../img/video_choral_thumb.png")no-repeat center center;
-background-size:cover;}
-
- 
 .span_box_name_wrap{width:100%;
 font-size:1rem;
 font-weight:400;
@@ -485,50 +464,93 @@ transition-duration:0.3s;}
 
 
 /*main_page_4*/
-
 #main_page_4_wrap{width:100%;
-height:100vh;
-clear:both;
-position:relative;
-overflow:auto;}
+height:100vh;}
 
-#main_page_4_slide{width:1000%;
-height:77vh;
-position:absolute;
-bottom:0;
-padding-top:3rem;
-background-color:#eaeaea;}
+#main_page_4{width:100vw;
+height:72vh;
+padding-top:10vh;
+overflow-x:scroll;}
 
-#main_page_4_slide li{width:50vh;
-height:60%;
-cursor: pointer;
-float:left;
-margin-left:0.5rem;
-background-color:#fff;}
-
-#main_page_4_slide li:first-child{margin-left:0;}
-
-#main_page_4_slide li img{width:100%;
-padding-top:2rem;}
-
-.main_page_4_text_box{width:100%;
-font-size:1.1rem;
+.main_page_4_slide{width:300vw;
+height:75vh;
+font-size:1.3rem;
 font-weight:400;
-text-align:center;
-display:block;
-padding:1rem 0 4rem 0;
-background-color:#fff;}
+text-align:center;}
 
+.main_page_4_slide::after{content:" ";
+display:block;
+clear:both;}
+
+.main_page_4_slide li{width:10%;
+height:62vh;
+margin-left:0.5%;
+float:left;}
+
+.main_page_4_slide li span{position:relative;
+top:65vh;}
+
+.main_page_4_slide li:nth-child(1){background:url("../img/autumn_2018_1st_thumb.jpg")no-repeat center center;
+background-size:100%;
+margin-left:0;
+transition:0.3s;}
+.main_page_4_slide li:nth-child(2){background:url("../img/summer_2018_3rd_thumb.jpg")no-repeat center center;
+background-size:100%;
+transition:0.3s;}
+.main_page_4_slide li:nth-child(3){background:url("../img/summer_2018_thumb.jpg")no-repeat center center;
+background-size:100%;
+transition:0.3s;}
+.main_page_4_slide li:nth-child(4){background:url("../img/spring_2018_thumb.jpg")no-repeat center center;
+background-size:100%;
+transition:0.3s;}
+.main_page_4_slide li:nth-child(5){background:url("../img/winter2017_2_thumb.jpg")no-repeat center center;
+background-size:100%;
+transition:0.3s;}
+.main_page_4_slide li:nth-child(6){background:url("../img/winter2017_1_1_thumb.jpg")no-repeat center center;
+background-size:100%;
+transition:0.3s;}
+.main_page_4_slide li:nth-child(7){background:url("../img/autumn2017_1_thumb.jpg")no-repeat center center;
+background-size:100%;
+transition:0.3s;}
+.main_page_4_slide li:nth-child(8){background:url("../img/summer2017_2_thumb.jpg")no-repeat center center;
+background-size:100%;
+transition:0.3s;}
+.main_page_4_slide li:nth-child(9){background:url("../img/summer2017_1_thumb.jpg")no-repeat center center;
+background-size:100%;
+transition:0.3s;}
+
+.main_page_4_slide li:nth-child(1):hover{background:url("../img/autumn_2018_1st_thumb_2.jpg")no-repeat center center;}
+.main_page_4_slide li:nth-child(2):hover{background:url("../img/summer_2018_3rd_thumb_2.jpg")no-repeat center center;}
+.main_page_4_slide li:nth-child(3):hover{background:url("../img/summer_2018_thumb_2.jpg")no-repeat center center;}
+.main_page_4_slide li:nth-child(4):hover{background:url("../img/spring_2018_thumb_2.jpg")no-repeat center center;}
+.main_page_4_slide li:nth-child(6):hover{background:url("../img/winter2017_1_1_thumb_2.jpg")no-repeat center center;}
+.main_page_4_slide li:nth-child(7):hover{background:url("../img/autumn2017_1_thumb_2.jpg")no-repeat center center;}
+.main_page_4_slide li:nth-child(9):hover{background:url("../img/summer2017_1_thumb_2.jpg")no-repeat center center;}
+
+/*스크롤바 */
+::-webkit-scrollbar{
+        height: 8px;
+        width: 0;
+    }
+    ::-webkit-scrollbar-thumb:horizontal{
+        background: #999;
+    }
+
+	::-webkit-scrollbar-thumb:horizontal:hover{
+        background: #333;
+    }
+/*스크롤바 */
 /*main_page_4_end*/
+
 
 /*footer*/
 
 #footer_wrap{width:100%;
-height:120vh;
+height:100vh;
 position:relative;}
 
 #footer{width:100%;
-height:100vh;
+height:80vh;
 position:absolute;
 bottom:0;
 background-color:black;}
@@ -554,7 +576,7 @@ float:right;
 
 .footer_box_logo{width:188px;
 height:60px;
-margin-top:14%;
+margin-top:6%;
 margin-left:6%;}
 
 .footer_box_logo img{width:100%;}
@@ -562,7 +584,7 @@ margin-left:6%;}
 .footer_box_menu{width:30%;
 font-size:1.2rem;
 font-weight:400;
-line-height:3.8rem;
+line-height:3.4rem;
 margin-top:6%;
 margin-left:6%;}
 
