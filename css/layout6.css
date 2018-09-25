@@ -69,7 +69,7 @@ right:-490px;
 z-index:201;
 background-color:rgba(0,0,0,0.83);}
 
-.nav_menu li{margin:1.7rem 0;}
+.nav_menu li{margin:2rem 0;}
 
 .nav_menu li:first-child{margin-top:0;}
 
@@ -96,7 +96,7 @@ left:20px;}
 
 .nav_sns{width:120px;
 height:30px;
-margin-top:4em;}
+margin-top:6em;}
 
 .nav_sns li{margin-left:10%;
 float:left;}
@@ -104,7 +104,7 @@ float:left;}
 .nav_sns li:first-child{margin-left:0;}
 
 .nav_company{color:#dcdcdc;
-margin-top:1rem;
+margin-top:1.2rem;
 clear:both;}
 
 
@@ -519,13 +519,20 @@ transition:0.3s;}
 background-size:100%;
 transition:0.3s;}
 
-.main_page_4_slide li:nth-child(1):hover{background:url("../img/autumn_2018_1st_thumb_2.jpg")no-repeat center center;}
-.main_page_4_slide li:nth-child(2):hover{background:url("../img/summer_2018_3rd_thumb_2.jpg")no-repeat center center;}
-.main_page_4_slide li:nth-child(3):hover{background:url("../img/summer_2018_thumb_2.jpg")no-repeat center center;}
-.main_page_4_slide li:nth-child(4):hover{background:url("../img/spring_2018_thumb_2.jpg")no-repeat center center;}
-.main_page_4_slide li:nth-child(6):hover{background:url("../img/winter2017_1_1_thumb_2.jpg")no-repeat center center;}
-.main_page_4_slide li:nth-child(7):hover{background:url("../img/autumn2017_1_thumb_2.jpg")no-repeat center center;}
-.main_page_4_slide li:nth-child(9):hover{background:url("../img/summer2017_1_thumb_2.jpg")no-repeat center center;}
+.main_page_4_slide li:nth-child(1):hover{background:url("../img/autumn_2018_1st_thumb_2.jpg")no-repeat center center;
+background-size:100%;}
+.main_page_4_slide li:nth-child(2):hover{background:url("../img/summer_2018_3rd_thumb_2.jpg")no-repeat center center;
+background-size:100%;}
+.main_page_4_slide li:nth-child(3):hover{background:url("../img/summer_2018_thumb_2.jpg")no-repeat center center;
+background-size:100%;}
+.main_page_4_slide li:nth-child(4):hover{background:url("../img/spring_2018_thumb_2.jpg")no-repeat center center;
+background-size:100%;}
+.main_page_4_slide li:nth-child(6):hover{background:url("../img/winter2017_1_1_thumb_2.jpg")no-repeat center center;
+background-size:100%;}
+.main_page_4_slide li:nth-child(7):hover{background:url("../img/autumn2017_1_thumb_2.jpg")no-repeat center center;
+background-size:100%;}
+.main_page_4_slide li:nth-child(9):hover{background:url("../img/summer2017_1_thumb_2.jpg")no-repeat center center;
+background-size:100%;}
 
 /*스크롤바 */
 ::-webkit-scrollbar{

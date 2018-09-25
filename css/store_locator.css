@@ -171,111 +171,71 @@ transition: all 0.3s;}
 
 /*-----------------menu_bar_end----------------------------------------------------고정*/
 
-
-/*all_products_nav*/
-
-#all_products_nav_img{width:100%;
-overflow:hidden;}
-
-#all_products_nav_wrap{width:100%;
-height:60px;
-border-top:1px solid #eaeaea;
-position:relative;
-top:120px;}
-
-#all_products_nav_wrap nav{width:30%;
-height:60px;
-margin:0 auto;}
-
-#all_products_nav_wrap nav ul{width:100%;
-height:60px;
-margin:0 auto;
-text-align:center;}
-
-nav::after{content:" ";
-display:block;
-clear:both;}
-
-#all_products_nav_wrap li{width:33%;
-height:55px;
-line-height:60px;
-border-bottom:5px solid #fff;
-float:left;
-transition-duration:0.3s;}
-
-#all_products_nav_wrap li:nth-child(2){border-bottom:5px solid #333;}
-
-#all_products_nav_wrap li:nth-child(3){width:14%;}
-#all_products_nav_wrap li:nth-child(4){width:20%;}
-
-#all_products_nav_wrap li:hover{border-bottom:5px solid #333;}
-
-#all_products_nav_wrap h2{font-size:1rem;
-font-weight:600;}
-
-.top_main_img{width:100%;
-margin-top:120px;
-text-align:center;
-background-color:#fff;}
-
-.top_main_img img{width:105%;}
+.title_wrap{padding-top:120px;}
 
 .title{width:100%;
 height:60px;
 text-align:center;
 line-height:60px;
-margin-top:60px;
 border-top:1px solid #eaeaea;
 border-bottom:1px solid #eaeaea;}
 
 .title h2{font-size:1.7rem;
 font-weight:600;}
 
-#products_wrap{width:100%;
+/*store_locator*/
+#store_locator_wrap{width:100%;
+height:100vh;
+margin-top:64px;
 margin-bottom:100px;}
 
-#products{width:80%;
-margin:0 auto;
-margin-top:2%;}
+#store_locator{width:80%;
+height:100vh;
+margin:0 auto;}
 
-#products::after{content:" ";
+.clear_fix::after{content:" ";
 display:block;
 clear:both;}
 
-#products li{width:32%;
-height:50%;
-text-align:center;
-line-height:2rem;
-margin-bottom:2%;
+.single-item{width:100%;
+height:100vh;}
+
+.store_left_box{width:45%;
+height:100vh;
+float:left;}
+
+.store_image{width:100%;
+height:50vh;}
+
+.one{background:url("../img/GG_2018sep01_01.jpg")no-repeat center center;
+background-size:cover;}
+.two{background:url("../img/2018mar16_01.jpg")no-repeat center center;
+background-size:cover;}
+.three{background:url("../img/RLIM_01.jpg")no-repeat center center;
+background-size:cover;}
+
+.store_info{width:100%;
+height:50vh;}
+
+.store_title{font-size:2.3rem;
+font-weight:400;
+padding-top:5%;}
+
+.store_description, .store_text{font-size:1.2rem;
+font-weight:300;
+line-height:1.8rem;
+margin-top:4%;}
+
+.store_map, .store_map_2, .store_map_3{width:53%;
+height:100vh;
 margin-left:2%;
-position:relative;
-top:0;
-float:left;
-transition-duration:0.3s;
-/*background-color:#eaeaea;*/}
+float:left;}
 
-#products li:nth-child(3n+1){margin-left:0;}
-
-.border{width:100%;
-border-bottom:5px solid #fff;
-transition-duration:0.3s;}
-
-#products li:hover{top:-15px;}
-#products li:hover .border{border-bottom:5px solid #333;}
-
-.products_text{width:100%;
-padding-bottom:1rem;
-display:block;}
-
-.name{font-size:1.2rem;
-font-weight:600;
-margin-top:17px;}
-
-.hashtag{color:#666;
-font-size:1rem;
-font-weight:400;}
-
-/*all_products_nav_end*/
+.store_map_2{background:url("../img/store_2.jpg")no-repeat center center;
+background-size:cover;}
+.store_map_3{background:url("../img/store_3.jpg")no-repeat center center;
+background-size:cover;}
+/*store_locator_end*/
 
 
 /*footer----------------------------------------------------고정*/
@@ -306,8 +266,7 @@ margin:-3rem  auto;}
 
 .footer_box{width:56%;
 height:100%;
-float:right;
-/*background-color:#666;*/}
+float:right;}
 
 .footer_box_logo{width:188px;
 height:60px;
@@ -333,8 +292,7 @@ margin-top:6%;
 margin-left:6%;}
 
 .footer_box_sns li{margin-left:10%;
-float:left;
-}
+float:left;}
 
 .footer_box_sns li:first-child{margin-left:0;}
 
@@ -360,8 +318,10 @@ color:#dcdcdc;}
 
 	.nav_company{margin-top:1.5rem;}
 
-	/*new_arrival*/
-	.top_main_img img{width:108;}
+	/*type*/
+	.top_main_img img{position:relative;
+	left:-1.8%;
+	width:105%;}
 
 	#products li{line-height:2.5rem;}
 
@@ -370,10 +330,6 @@ color:#dcdcdc;}
 	.name{font-size:1.3rem;}
 
 	.hashtag{font-size:1.1rem;}
-
-
-
-
 
 	/*footer(고정)*/
 	.footer_box_menu{font-size:1.4rem;

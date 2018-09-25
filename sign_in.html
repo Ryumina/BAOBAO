@@ -9,12 +9,12 @@
   <title>BAO BAO ISSEY MIYAKE</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link href="css/tote_bag.css" rel="stylesheet" type="text/css">
+  <link href="css/sign_in.css" rel="stylesheet" type="text/css">
 
 
   <script src="js/jquery-1.11.3.min.js" type="text/javascript" text="javascript"></script>
   <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-  <script src="js/tote_bag.js" type="text/javascript"></script>
+  <script src="js/sign_in.js" type="text/javascript"></script>
 
 
  </head>
@@ -127,90 +127,79 @@
 		<!----title---->
 		<div class="title_wrap"></div>
 			<div class="title">
-				<h2>SOLID</h2>
+				<h2>ACCOUNT</h2>
 			</div>
 		</div>
 		<!----title_end---->
 
-		<!----products---->
-		<section id="products_wrap">
-			<article id="products">
-				<ul>
-					<!--------------------SOLID-------------------->
-					<li>
-							<a href="item_view.html">
-								<img class="border" src="img/products/top_handle/BB83AG351_color_0607.jpg"/>
-								<span class="products_text">
-									<h3 class="name">BATEAU MATTE</h3>
-									<span class="hashtag">#TOP HANDLE #SOLID</span>
-								</span>
-							</a>
-						</li>
+		<!----sign_in---->
+		<section id="account_wrap">
+			<article id="account">
+				<!------account_nav------>
+				<div class="account_nav">
+					<ul>
+						<a href="sign_in.html"><li>SIGN IN</li></a>
+						<a href="register.html"><li>REGISTER</li></a>
+					</ul>
+				</div>
+				<!------account_nav_end------>
 
-						<li>
-							<a href="item_view_camel.html">
-								<img class="border" src="img/products/top_handle/BB83AG351_color_0627.jpg"/>
-								<span class="products_text">
-									<h3 class="name">BATEAU MATTE</h3>
-									<span class="hashtag">#TOP HANDLE #SOLID</span>
-								</span>
-							</a>
-						</li>
+				<!------welcome_back_text------>
+				<div class="welcome_back">
+					<p>Welcome back.</p>
+				</div>
+				<!------welcome_back_text_end------>
 
-						<li>
-							<a href="item_view_purple.html">
-								<img class="border" src="img/products/crossbody_bag/BB83AG272_color_0636.jpg"/>
-								<span class="products_text">
-									<h3 class="name">LANDER</h3>
-									<span class="hashtag">#CROSSBODY BAG #SOLID</span>
-								</span>
-							</a>
-						</li>
+				<!------sign_in_text------>
+				<div class="sign_in_text">
+					<p>Sign in with your email and password.</p>
+				</div>
+				<!------sign_in_text_end------>
 
-						<li>
-							<a href="item_view.html">
-								<img class="border" src="img/products/crossbody_bag/BB83AG272_color_0676.jpg"/>
-								<span class="products_text">
-									<h3 class="name">LANDER</h3>
-									<span class="hashtag">#CROSSBODY BAG #SOLID</span>
-								</span>
-							</a>
-						</li>
+				<!------input_email------>
+				<form>
+				  <input type="text" name="email" placeholder="Email"/>
+				</form>
+				<!------input_email_end------>
 
-						<li>
-							<a href="item_view_camel.html">
-								<img class="border" src="img/products/clutch_bag/BB83AG201_color_0606.jpg"/>
-								<span class="products_text">
-									<h3 class="name">TONNEAU MATTE</h3>
-									<span class="hashtag">#CLUTCH BAG #SOLID</span>
-								</span>
-							</a>
-						</li>
+				<!------input_password------>
+				<form>
+				  <input type="password" name="password" placeholder="Password"/>
+				</form>
+				<!------input_password_end------>
 
+				<!------password_text------>
+				<div class="password_text">
+					<ul>
 						<li>
-							<a href="item_view_purple.html">
-								<img class="border" src="img/products/clutch_bag/BB83AG201_color_0611.jpg"/>
-								<span class="products_text">
-									<h3 class="name">TONNEAU MATTE</h3>
-									<span class="hashtag">#CLUTCH BAG #SOLID</span>
-								</span>
-							</a>
+							<span class="left">Forgot password?</span>
 						</li>
+						<li>
+							<span class="right">Show Password</span>
+						</li>
+					</ul>
+				</div>
+				<!------password_text_end------>
 
-						<li>
-							<a href="item_view.html">
-								<img class="border" src="img/products/clutch_bag/BB83AG201_color_0667.jpg"/>
-								<span class="products_text">
-									<h3 class="name">TONNEAU MATTE</h3>
-									<span class="hashtag">#CLUTCH BAG #SOLID</span>
-								</span>
-							</a>
-						</li>
-					<!--------------------SOLID_END-------------------->
-				</ul>
+				<!------input_checkbox------>
+				<div class="checkbox_wrap">
+					<input class="checkbox-input" type="checkbox" id="remember">
+					<label class="checkbox-label" for="remember">
+					  Remember me
+					</label>
+				  </div>
+				<!------input_checkbox_end------>
+
+				<!------button------>
+				<button type="button" class="sign_in">SIGN IN</button>
+				<!------button_end------>
+
+
+
+
 			</article>
 		</section>
-		<!----products_end---->
+		<!----sign_in_end---->
 
 			<!------footer(고정)------>
 			<section id="footer_wrap" class="section">
